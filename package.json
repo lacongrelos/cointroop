@@ -1,0 +1,48 @@
+{
+  "name": "cointroop",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Cointroop base",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lacongrelos/cointroop.git"
+  },
+  "author": "Lacon Grelos <lacongrelos17@gmail.com>",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/lacongrelos/cointroop/issues"
+  },
+  "engines": {
+    "node": ">=15.14.0",
+    "npm": ">=7.7.6"
+  },
+  "homepage": "https://github.com/lacongrelos/cointroop#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^6.0.0",
+    "lerna": "^4.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.0",
+    "standard-version": "^9.3.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "lint-staged": {
+    "*.js": "eslint --cache"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "scripts": {
+    "prepare": "husky install"
+  }
+}
