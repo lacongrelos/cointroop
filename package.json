@@ -39,7 +39,7 @@
     "packages/*"
   ],
   "lint-staged": {
-    "*.js": "eslint --cache"
+    "*.js, .jsx,.ts,.tsx": "eslint --cache"
   },
   "commitlint": {
     "extends": [
