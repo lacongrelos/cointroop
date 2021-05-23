@@ -8,8 +8,9 @@
   "plugins": ["@typescript-eslint"],
   "extends": [
     "prettier",
-    "airbnb-typescript/base",
     "eslint:recommended",
+    "airbnb-typescript/base",
+    "prettier/@typescript-eslint",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended"
   ],
